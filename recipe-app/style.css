@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ece9e6;
+    background: -webkit-linear-gradient(to left, #ffffff, #ece9e6);
+    background: linear-gradient(to left, #ffffff, #ece9e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.mobile-container {
+    background-color: white;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.header__input {
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+}
+
+.header__search-btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(60, 60, 60);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.fav-container {
+    background-color: rgb(123, 175, 224);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.fav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+}
+
+.fav__item {
+    position: relative;
+    margin: 10px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.fav__img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #3333331a;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.fav__name {
+    display: inline-block;
+    font-size: 0.8rem;
+    width: 75px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fav__close-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -0.4rem;
+    right: -0.4rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fav__item:hover .fav__close-btn {
+    opacity: 1;
+}
+
+.meals {
+}
+
+.meal {
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    margin: 1.5rem;
+}
+
+.meal__header {
+    position: relative;
+}
+
+.meal__random {
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.meal__img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.meal__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.meal__name {
+    margin: 0;
+}
+
+.meal___fav-btn {
+    border: none;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.meal___fav-btn.active {
+    color: red;
+}
+
+.meal-info-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.meal-info-container.hidden {
+    display: none;
+}
+
+.meal-info {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 800px;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.info-header {
+    position: relative;
+}
+
+.info-header__close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -0.5rem;
+    right: 0;
+    cursor: pointer;
+}
+
+.info-header__title {
+    text-align: center;
+}
+
+.info-header__img {
+    max-width: 100%;
+}
